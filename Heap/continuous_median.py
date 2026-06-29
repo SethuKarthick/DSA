@@ -11,7 +11,7 @@ class ContinuousMedian:
 
     def insert(self, num):
 
-        if not len(self.low) or num < self.low[0]:
+        if not len(self.low) or num < -self.low[0]:
             heapq.heappush(self.low, -num)
         else:
             heapq.heappush(self.high, num)

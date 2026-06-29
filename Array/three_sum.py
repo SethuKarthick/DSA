@@ -30,7 +30,7 @@ def three_sum(array):
                 while right - 1 >= 0 and array[right-1] == array[right]:
                     right -= 1
                 left += 1
-                right += 1
+                right -= 1
 
             elif current_sum < target_sum:
                 left += 1

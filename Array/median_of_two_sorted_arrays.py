@@ -17,10 +17,10 @@ def get_median(nums1, nums2):
         i = (low+high) // 2
         j = left_size - i
 
-        a_left = nums1[i-1] if i >= 0 else float("-inf")
+        a_left = nums1[i-1] if i > 0 else float("-inf")
         a_right = nums1[i] if i < m else float("inf")
 
-        b_left = nums2[j-1] if j >= 0 else float("-inf")
+        b_left = nums2[j-1] if j > 0 else float("-inf")
         b_right = nums2[j] if j < n else float("inf")
 
         if (a_left <= b_right) and (b_left <= a_right):

@@ -40,6 +40,7 @@ def zigzag_traverse(arr):
     res.append(arr[row][col])
     return res
 
+
 result = zigzag_traverse(array)
 print(result)
 

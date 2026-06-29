@@ -5,7 +5,6 @@ matrix = [
     [0, 1, 0, 0, 1]
 ]
 
-
 def largest_island(matrix):
     rows = len(matrix)
     cols = len(matrix[0])

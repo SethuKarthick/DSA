@@ -8,7 +8,7 @@ def merge_binary_tree(t1, t2):
     if t1 is None:
         return t2
     if t2 is None:
-        return t2
+        return t1
 
     merged = BinaryTree(t1.value+t2.value)
     merged.left = merge_binary_tree(t1.left, t2.left)

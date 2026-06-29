@@ -1,5 +1,7 @@
 array = [5, 1, 4, 2]
 
+# output = [8, 40, 10, 20]
+
 def array_of_products(array):
 
     products = [1 for _ in range(len(array))]

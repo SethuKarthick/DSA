@@ -22,9 +22,8 @@ def is_one_edit(string_one, string_two):
             if found_diff:
                 return False
             found_diff = True
-            if len(s1) != len(s2):
-                j+=1
-                continue
+            if len(s1) == len(s2):
+                i+=1
         else:
             i += 1
         j += 1

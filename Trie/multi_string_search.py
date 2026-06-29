@@ -40,7 +40,6 @@ if __name__ == "__main__":
 
             if current_node.end != "*":
                 contained_strings[current_node.end] = True
-        print(contained_strings)
 
     for i in range(len(big_string)):
         find_small_string_in_big_string(big_string, i, trie, contained_strings)

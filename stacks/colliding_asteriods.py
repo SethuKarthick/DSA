@@ -5,7 +5,7 @@ def colliding_asteriods(input):
     stack = []
 
     for aestroid in input:
-        while stack and aestroid < 0 and stack[-1] > 0:
+        while stack and aestroid < 0 < stack[-1]:
             top = stack[-1]
             if abs(aestroid) > abs(top):
                 stack.pop()

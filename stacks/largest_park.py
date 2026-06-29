@@ -41,3 +41,39 @@ result = largest_park(input_grid)
 print(result)
 
 
+
+# matrix = [
+#     [1, 0, 0, 1, 0],
+#     [1, 0, 1, 0, 0],
+#     [0, 0, 1, 1, 1],
+#     [0, 1, 0, 0, 1]
+# ]
+#
+# def largest_island(matrix):
+#     rows = len(matrix)
+#     cols = len(matrix[0])
+#     max_size = 0
+#
+#     for r in range(rows):
+#         for c in range(cols):
+#             if matrix[r][c] == 1:
+#                 size = dfs(r, c, matrix)
+#                 max_size = max(max_size, size)
+#     return max_size
+#
+# def dfs(r, c, matrix):
+#     if r < 0 or r >= len(matrix) or c < 0 or c >= len(matrix[0]) or matrix[r][c] == 0:
+#         return 0
+#
+#     matrix[r][c] = 0  # Mark as visited by setting to 0
+#     size = 1
+#
+#     directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+#
+#     for dr, dc in directions:
+#         size += dfs(r + dr, c + dc, matrix)
+#
+#     return size
+#
+# res = largest_island(matrix)
+# print(res)

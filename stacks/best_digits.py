@@ -7,7 +7,7 @@ def best_digits(num, k):
     stack = []
 
     for digit in num:
-        while stack and stack[-1] < digit:
+        while stack and k>0 and stack[-1] < digit:
             stack.pop()
             k -= 1
         stack.append(digit)
